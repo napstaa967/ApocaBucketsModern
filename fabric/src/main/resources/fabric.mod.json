@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "apocabuckets",
+  "version": "${version}",
+  "name": "Apocalyptic Buckets (Modern)",
+  "description": "Modern remake of Apocalyptic Buckets for 1.21.1",
+  "authors": [
+    "TheArteOfRomance"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/napstaa967/ApocaBucketsModern"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/apocabuckets/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.arteoformance.apocabuckets.fabric.ExampleModFabric"
+    ],
+    "client": [
+      "com.arteoformance.apocabuckets.fabric.client.ApocaBucketsFabricClient"
+    ],
+    "fabric-datagen": [
+      "com.arteoformance.apocabuckets.fabric.client.ApocaBucketsDataGenerator"
+    ]
+  },
+  "mixins": [
+    "apocabuckets.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

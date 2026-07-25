@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+#issueTrackerURL = ""
+license = "Insert License Here"
+
+[[mods]]
+modId = "apocabuckets"
+version = "${version}"
+displayName = "Apocalyptic Buckets (Modern)"
+authors = "TheArteOfRomance"
+description = '''
+Modern remake of Apocalyptic Buckets for 1.21.1
+'''
+#logoFile = ""
+
+[[dependencies.apocabuckets]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.apocabuckets]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "apocabuckets.mixins.json"

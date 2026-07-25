@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    {
+      "item": "apocabuckets:apocalyptic_bucket"
+    },
+    {
+      "item": "minecraft:magenta_glazed_terracotta"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "apocabuckets:null2_bucket"
+  }
+}

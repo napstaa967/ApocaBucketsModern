@@ -1,0 +1,16 @@
+{
+  "item.apocabuckets.apocalyptic_bucket": "Apocalyptic Bucket",
+  "item.apocabuckets.flood_bucket": "Tsunami Bucket",
+  "item.apocabuckets.darkness_bucket": "Void Bucket",
+  "item.apocabuckets.fire_bucket": "Fire Bucket",
+  "item.apocabuckets.toxic_bucket": "Toxic Bucket",
+  "item.apocabuckets.ice_bucket": "Frozen Bucket",
+  "item.apocabuckets.null_bucket": "Paint Bucket",
+  "item.apocabuckets.null2_bucket": "Paint Bucket",
+  "item.apocabuckets.concrete_bucket": "Concrete Bucket",
+  "item.apocabuckets.midas_bucket": "Midas Bucket",
+  "item.apocabuckets.sponge_bucket": "Sponge Bucket",
+  "itemGroup.apocabuckets.apocalyptic_buckets": "Apocalyptic Buckets",
+  "block.apocabuckets.null": "block.apocabuckets.null",
+  "block.apocabuckets.null2": "block.apocabuckets.null"
+}

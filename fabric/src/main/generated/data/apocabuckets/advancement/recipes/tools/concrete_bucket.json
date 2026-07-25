@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_null_bucket": {
+      "conditions": {
+        "items": [
+          {
+            "items": "apocabuckets:null_bucket"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "apocabuckets:concrete_bucket"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_null_bucket"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "apocabuckets:concrete_bucket"
+    ]
+  }
+}

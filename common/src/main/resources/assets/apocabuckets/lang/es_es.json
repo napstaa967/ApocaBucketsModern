@@ -1,0 +1,16 @@
+{
+  "item.apocabuckets.apocalyptic_bucket": "Cubo apocalíptico",
+  "item.apocabuckets.flood_bucket": "Cubo con tsunami",
+  "item.apocabuckets.darkness_bucket": "Cubo con vacío",
+  "item.apocabuckets.fire_bucket": "Cubo con fuego",
+  "item.apocabuckets.toxic_bucket": "Cubo tóxico",
+  "item.apocabuckets.ice_bucket": "Cubo congelado",
+  "item.apocabuckets.null_bucket": "Cubo con pintura",
+  "item.apocabuckets.null2_bucket": "Cubo con pintura",
+  "item.apocabuckets.concrete_bucket": "Cubo con cemento",
+  "item.apocabuckets.midas_bucket": "Cubo midas",
+  "item.apocabuckets.sponge_bucket": "Cubo con esponja",
+  "itemGroup.apocabuckets.apocalyptic_buckets": "Cubos apocalípticos",
+  "block.apocabuckets.null": "block.apocabuckets.null",
+  "block.apocabuckets.null2": "block.apocabuckets.null"
+}
