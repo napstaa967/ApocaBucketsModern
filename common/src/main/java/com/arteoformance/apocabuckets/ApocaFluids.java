@@ -16,7 +16,7 @@ public class ApocaFluids {
                     ResourceLocation.withDefaultNamespace("block/water_still"),
                     ResourceLocation.withDefaultNamespace("block/water_flow"),
                     ResourceLocation.withDefaultNamespace("block/water_overlay"),
-                    FastColor.ARGB32.color(0x00, 0xFF, 0x00)
+                    FastColor.ARGB32.color(0x00, 0x7F, 0x00)
             )
     );
 

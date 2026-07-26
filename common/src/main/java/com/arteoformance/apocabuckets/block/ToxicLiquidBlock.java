@@ -24,7 +24,7 @@ public class ToxicLiquidBlock extends LiquidBlock {
     protected void entityInside(BlockState blockState, Level level, BlockPos blockPos, Entity entity) {
         if (entity instanceof LivingEntity livingEntity && !(livingEntity instanceof Zombie)) {
             if (livingEntity instanceof Player || livingEntity.hasEffect(MobEffects.DAMAGE_RESISTANCE)) {
-                livingEntity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 300, -10));
+                livingEntity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 6*60*20, 10));
             } else {
                 Zombie zombie = new Zombie(EntityType.ZOMBIE, level);
                 zombie.setPos(livingEntity.position());

@@ -181,6 +181,8 @@ public abstract class FloodFluid extends FlowingFluid {
 
     @Override
     public void tick(Level level, BlockPos blockPos, FluidState fluidState) {
+        @Nullable
+        Block decay = getDecayResult();
         if (!fluidState.isSource()) {
             FluidState fluidState2 = this.getNewLiquid(level, blockPos, level.getBlockState(blockPos));
             int i = this.getSpreadDelay(level, blockPos, fluidState, fluidState2);
@@ -198,8 +200,6 @@ public abstract class FloodFluid extends FlowingFluid {
 
         this.spread(level, blockPos, fluidState);
         // Remove block after attempting to spread to prevent infinite flood
-        @Nullable
-        Block decay = getDecayResult();
         if (null != decay) {
             level.setBlock(blockPos, decay.defaultBlockState(), 3);
         }

@@ -26,35 +26,33 @@ public class ApocaItems {
             ApocaFluids.FLOOD_FLUID.getSource(),
             new Item.Properties()
                     .stacksTo(1)
-                    .craftRemainder(ApocaItems.APOCALYPTIC_BUCKET.get())
+                    
     ));
 
     public static Supplier<Item> ICE_BUCKET = ApocaBuckets.REGISTRY.registerItem("ice_bucket", () -> new BucketItem(
             ApocaFluids.ICE_FLUID.getSource(),
             new Item.Properties()
                     .stacksTo(1)
-                    .craftRemainder(ApocaItems.APOCALYPTIC_BUCKET.get())
     ));
 
     public static Supplier<Item> DARKNESS_BUCKET = ApocaBuckets.REGISTRY.registerItem("darkness_bucket", () -> new BucketItem(
             ApocaFluids.DARKNESS_FLUID.getSource(),
             new Item.Properties()
                     .stacksTo(1)
-                    .craftRemainder(ApocaItems.APOCALYPTIC_BUCKET.get())
     ));
 
     public static Supplier<Item> TOXIC_BUCKET = ApocaBuckets.REGISTRY.registerItem("toxic_bucket", () -> new BucketItem(
             ApocaFluids.TOXIC_FLUID.getSource(),
             new Item.Properties()
                     .stacksTo(1)
-                    .craftRemainder(ApocaItems.APOCALYPTIC_BUCKET.get())
+                    
     ));
 
     public static Supplier<Item> NULL_BUCKET = ApocaBuckets.REGISTRY.registerItem("null_bucket", () -> new SolidBucketItem(
             ApocaBlocks.NULL.get(),
             SoundEvents.BUCKET_EMPTY,
             new Item.Properties()
-                    .craftRemainder(ApocaItems.APOCALYPTIC_BUCKET.get())
+                    
                     .stacksTo(1)
     ));
 
@@ -62,7 +60,7 @@ public class ApocaItems {
             ApocaBlocks.NULL2.get(),
             SoundEvents.BUCKET_EMPTY,
             new Item.Properties()
-                    .craftRemainder(ApocaItems.APOCALYPTIC_BUCKET.get())
+                    
                     .stacksTo(1)
     ));
 
@@ -70,7 +68,7 @@ public class ApocaItems {
             ApocaBlocks.CONCRETE.get(),
             SoundEvents.BUCKET_EMPTY,
             new Item.Properties()
-                    .craftRemainder(ApocaItems.APOCALYPTIC_BUCKET.get())
+                    
                     .stacksTo(1)
     ));
 
@@ -78,7 +76,7 @@ public class ApocaItems {
             ApocaBlocks.FIRE.get(),
             SoundEvents.BUCKET_EMPTY,
             new Item.Properties()
-                    .craftRemainder(ApocaItems.APOCALYPTIC_BUCKET.get())
+                    
                     .stacksTo(1)
     ));
 
@@ -86,7 +84,7 @@ public class ApocaItems {
             ApocaBlocks.SPONGE.get(),
             SoundEvents.BUCKET_EMPTY,
             new Item.Properties()
-                    .craftRemainder(ApocaItems.APOCALYPTIC_BUCKET.get())
+                    
                     .stacksTo(1)
     ));
 

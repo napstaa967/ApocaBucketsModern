@@ -21,7 +21,7 @@ import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FluidState;
 import org.jetbrains.annotations.Nullable;
 
-public abstract class ToxicFluid extends FlowingFluid {
+public abstract class ToxicFluid extends FloodFluid {
 
     @Nullable
     public Block getDecayResult() {
@@ -52,38 +52,6 @@ public abstract class ToxicFluid extends FlowingFluid {
     public Item getBucket() {
         return ApocaItems.TOXIC_BUCKET.get();
     }
-
-    @Override
-    protected boolean canConvertToSource(Level level) {
-        return true;
-    }
-
-    @Override
-    protected void beforeDestroyingBlock(LevelAccessor levelAccessor, BlockPos blockPos, BlockState blockState) {
-        BlockEntity blockEntity = blockState.hasBlockEntity() ? levelAccessor.getBlockEntity(blockPos) : null;
-        Block.dropResources(blockState, levelAccessor, blockPos, blockEntity);
-    }
-
-    @Override
-    public int getSlopeFindDistance(LevelReader levelReader) {
-        return 0;
-    }
-
-    @Override
-    public int getDropOff(LevelReader levelReader) {
-        return 1;
-    }
-
-    @Override
-    public boolean canBeReplacedWith(FluidState fluidState, BlockGetter blockGetter, BlockPos blockPos, Fluid fluid, Direction direction) {
-        return direction == Direction.DOWN && !fluid.is(FluidTags.WATER);
-    }
-
-    @Override
-    protected float getExplosionResistance() {
-        return 100.0F;
-    }
-
 
     public static class Source extends ToxicFluid {
 
